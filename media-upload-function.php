@@ -1,36 +1,4 @@
 /**
- * Plugin Name: Easy Media Uploader
- * Plugin URI: http://guitarchordslyrics.com
- * Description: A WordPress plugin that provides a dynamic media uploader functionality. 
- *              It allows users to integrate a media uploader easily within the admin panel 
- *              and provides shortcode support for displaying uploaded media.
- * Version: 1.0
- * Author: Arif M.
- * Author URI: http://guitarchordslyrics.com
- * License: GNU GENERAL PUBLIC LICENSE
- *
- * Features:
- * - Enqueues custom CSS and JavaScript for the media uploader.
- * - Registers a custom post type "Media Uploader" with REST API support.
- * - Adds a custom meta box for generating and displaying shortcodes for uploaded media.
- * - Provides shortcodes for embedding uploaded media in posts or pages.
- * - Removes the editor from the custom post type to streamline the interface.
- *
- * Hooks:
- * - `admin_init`: Enqueues styles and scripts for the admin panel.
- * - `init`: Registers the custom post type and removes the editor support.
- * - `add_meta_boxes_{post_type}`: Adds a custom meta box for the "Media Uploader" post type.
- *
- * Functions:
- * - easy_media_uploader_enqueue(): Enqueues the plugin's CSS and JavaScript files.
- * - create_easyposttype(): Registers the "Media Uploader" custom post type.
- * - adding_custom_meta_boxes(): Adds a meta box for shortcode generation.
- * - cpt_form_site_Render(): Renders the content of the custom meta box.
- *
- * Usage:
- * - Use the generated shortcode `[e_img_{post_id}]` to display uploaded media in the frontend.
- * - Use the PHP function `EasyMedia('[e_img_{post_id}]')` to insert media dynamically in templates.
- */
 <?php 
 /*
 Plugin Name: Easy Media Uploader
